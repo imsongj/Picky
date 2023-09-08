@@ -1,6 +1,7 @@
 package com.picky.business.log.domain.entity;
 
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -19,5 +20,8 @@ public class LogProduct {
     private Long id;
     private Long userId;
     private Long productId;
+
+    @Column
+    @CreatedDate
     private LocalDateTime createdAt;
 }

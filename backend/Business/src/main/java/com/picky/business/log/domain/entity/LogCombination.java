@@ -1,6 +1,7 @@
 package com.picky.business.log.domain.entity;
 
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -20,11 +21,12 @@ public class LogCombination {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long userId;
+    @Column
+    @CreatedDate
     private LocalDateTime createdAt;
-
     //Combination Item 리스트
+    @Column(name="log_combination_item")
     @ElementCollection
     @CollectionTable(name="log_combination_item")
-    @Column(name="log_combination_item")
     private List<Long> logCombinationItem = new ArrayList<>();
 }
