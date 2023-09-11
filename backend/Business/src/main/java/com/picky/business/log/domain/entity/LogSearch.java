@@ -1,6 +1,7 @@
 package com.picky.business.log.domain.entity;
 
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -17,6 +18,10 @@ public class LogSearch {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     private String keyword;
+
+    @Column
+    @CreatedDate
     private LocalDate createdAt;
 }
