@@ -1,7 +1,8 @@
 package com.picky.business.product.controller;
 
-import com.picky.business.product.dto.ProductRegistRequest;
 import com.picky.business.product.dto.ProductDetailResponse;
+import com.picky.business.product.dto.ProductRegistRequest;
+import com.picky.business.product.dto.ProductUpdateRequest;
 import com.picky.business.product.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -16,16 +17,23 @@ import org.springframework.web.bind.annotation.*;
 public class ProductController {
 
     private final ProductService productService;
+
     @GetMapping(value = "/{productId}")
     public ResponseEntity<ProductDetailResponse> productDetailsByProductId(
-            @PathVariable Long productId){
+            @PathVariable Long productId) {
         return ResponseEntity.status(HttpStatus.OK).body(productService.findProductByProductId(productId));
     }
 
     @PostMapping
-    public ResponseEntity<String> addProduct(@RequestBody ProductRegistRequest request){
+    public ResponseEntity<String> addProduct(@RequestBody ProductRegistRequest request) {
         productService.addProduct(request);
         return ResponseEntity.status(HttpStatus.CREATED).body("상품등록 완료");
+    }
+
+    @PatchMapping(value = "/{productId}")
+    public ResponseEntity<String> updateProduct(@PathVariable Long productId, @RequestBody ProductUpdateRequest request) {
+        productService.updateProduct(productId, request);
+        return ResponseEntity.status(HttpStatus.CREATED).body("상품 수정 완료");
     }
 
 
