@@ -23,14 +23,15 @@ public class Comment {
     @Column
     private String userNickname;
     @Column
-    private Long productId;
-    @Column
     private String content;
-    @Column
-    private LocalDateTime createdAt;
-    @Column
-    private Boolean isDeleted = false;
+
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
+
+    @Column
+    private Boolean isDeleted;
+
+    @Column
+    private LocalDateTime createdAt;
 }
