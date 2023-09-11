@@ -23,10 +23,11 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class ProductService {
     private final ProductRepository productRepository;
+    private static final String NOT_FOUND = "값을 가진 제품이 없습니다";
 
     public ProductDetailResponse findProductByProductId(Long id) {
         Product product = Optional.ofNullable(productRepository.findProductById(id))
-                .orElseThrow(() -> new ProductNotFoundException(id + "값을 가진 제품이 없습니다"));
+                .orElseThrow(() -> new ProductNotFoundException(id + NOT_FOUND));
 
 
         List<CommentResponse> commentResponseList = Optional.ofNullable(product.getComments())
@@ -79,13 +80,22 @@ public class ProductService {
     public void updateProduct(Long id, ProductUpdateRequest request) {
         // 해당 ID의 제품 찾기
         Product currentProduct = productRepository.findById(id)
-                .orElseThrow(() -> new ProductNotFoundException(id + "값을 가진 제품이 없습니다"));
+                .orElseThrow(() -> new ProductNotFoundException(id + NOT_FOUND));
 
         //필드값 변경
         updateProductFields(currentProduct, request);
         productRepository.save(currentProduct);
     }
 
+    public void deleteProduct(Long id){
+        //findById값이 null이면 예외 던지기, 그렇지 않다면 deleteById 실행
+        productRepository.findById(id)
+                .ifPresentOrElse(
+                        product -> productRepository.deleteById(id),
+                        () -> { throw new ProductNotFoundException(id + " NOT FOUND"); }
+                );
+
+    }
     private void updateProductFields(Product currentProduct, ProductUpdateRequest request) {
         updateIfNotNull(request::getProductName, currentProduct::setProductName);
         updateIfNotNull(request::getPrice, currentProduct::setPrice);

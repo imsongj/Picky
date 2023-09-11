@@ -36,5 +36,9 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.CREATED).body("상품 수정 완료");
     }
 
-
+    @DeleteMapping(value="/{productId}")
+    public ResponseEntity<String> deleteProduct(@PathVariable Long productId){
+        productService.deleteProduct(productId);
+        return ResponseEntity.status(HttpStatus.CREATED).body("상품 삭제 완료");
+    }
 }
