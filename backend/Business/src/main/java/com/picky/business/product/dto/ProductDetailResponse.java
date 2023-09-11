@@ -1,6 +1,5 @@
 package com.picky.business.product.dto;
 
-import com.picky.business.product.domain.entity.Badge;
 import lombok.*;
 
 import java.util.List;
@@ -14,7 +13,7 @@ public class ProductDetailResponse {
     private String productName;
     private int price;
     private String filename;
-    private Badge badge;
+    private String badge;
     private int category;
     private int favoriteCount; //좋아요 수
     private int weight;

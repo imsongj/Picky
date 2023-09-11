@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -19,15 +18,20 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     private Long userId;
+    @Column
     private String userNickname;
+    @Column
     private String content;
-    private Boolean isDeleted = false;
-
-    @CreatedDate
-    private LocalDateTime createdAt;
 
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
+
+    @Column
+    private Boolean isDeleted;
+
+    @Column
+    private LocalDateTime createdAt;
 }

@@ -1,6 +1,5 @@
 package com.picky.business.product.dto;
 
-import com.picky.business.product.domain.entity.Badge;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +15,7 @@ public class ProductRegistRequest {
     private String productName;
     private int price;
     private String filename;
-    private Badge badge;
+    private String badge;
     private int category;
     private int weight;
     private int kcal;
