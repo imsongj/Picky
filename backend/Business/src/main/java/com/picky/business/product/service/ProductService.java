@@ -1,10 +1,12 @@
 package com.picky.business.product.service;
 
+import com.picky.business.exception.ProductNotFoundException;
 import com.picky.business.product.domain.entity.Product;
 import com.picky.business.product.domain.repository.ProductRepository;
 import com.picky.business.product.dto.CommentResponse;
 import com.picky.business.product.dto.ProductDetailResponse;
 import com.picky.business.product.dto.ProductRegistRequest;
+import com.picky.business.product.dto.ProductUpdateRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -12,6 +14,8 @@ import org.springframework.stereotype.Service;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 @Service
@@ -20,10 +24,10 @@ import java.util.stream.Collectors;
 public class ProductService {
     private final ProductRepository productRepository;
 
-    public ProductDetailResponse findProductByProductId(Long productId) {
-        Product product = productRepository.findProductById(productId);
+    public ProductDetailResponse findProductByProductId(Long id) {
+        Product product = Optional.ofNullable(productRepository.findProductById(id))
+                .orElseThrow(() -> new ProductNotFoundException(id + "값을 가진 제품이 없습니다"));
 
-        if (product == null) return null;
 
         List<CommentResponse> commentResponseList = Optional.ofNullable(product.getComments())
                 .orElse(Collections.emptyList())
@@ -51,7 +55,8 @@ public class ProductService {
                 .comments(commentResponseList)
                 .build();
     }
-    public void addProduct(ProductRegistRequest request){
+
+    public void addProduct(ProductRegistRequest request) {
         productRepository.save(
                 Product.builder()
                         .productName(request.getProductName())
@@ -69,5 +74,37 @@ public class ProductService {
                         .convenienceCode(request.getConvenienceCode())
                         .build()
         );
+    }
+
+    public void updateProduct(Long id, ProductUpdateRequest request) {
+        // 해당 ID의 제품 찾기
+        Product currentProduct = productRepository.findById(id)
+                .orElseThrow(() -> new ProductNotFoundException(id + "값을 가진 제품이 없습니다"));
+
+        //필드값 변경
+        updateProductFields(currentProduct, request);
+        productRepository.save(currentProduct);
+    }
+
+    private void updateProductFields(Product currentProduct, ProductUpdateRequest request) {
+        updateIfNotNull(request::getProductName, currentProduct::setProductName);
+        updateIfNotNull(request::getPrice, currentProduct::setPrice);
+        updateIfNotNull(request::getFilename, currentProduct::setFilename);
+        updateIfNotNull(request::getBadge, currentProduct::setBadge);
+        updateIfNotNull(request::getCategory, currentProduct::setCategory);
+        updateIfNotNull(request::getWeight, currentProduct::setWeight);
+        updateIfNotNull(request::getKcal, currentProduct::setKcal);
+        updateIfNotNull(request::getCarb, currentProduct::setCarb);
+        updateIfNotNull(request::getProtein, currentProduct::setProtein);
+        updateIfNotNull(request::getFat, currentProduct::setFat);
+        updateIfNotNull(request::getSodium, currentProduct::setSodium);
+        updateIfNotNull(request::getConvenienceCode, currentProduct::setConvenienceCode);
+    }
+
+    private <T> void updateIfNotNull(Supplier<T> getter, Consumer<T> setter) {
+        T value = getter.get();
+        if (value != null) {
+            setter.accept(value);
+        }
     }
 }
