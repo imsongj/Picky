@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="product")
+@Table(name = "product")
 @Getter
 @AllArgsConstructor
 @Builder
@@ -19,20 +19,19 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(nullable = false)
+    @Column
     private String productName;
-    @Column(nullable = false)
+    @Column
     private int price;
-    @Column(nullable = false)
+    @Column
     private String filename;
     @Column
-    private Badge badge;
-    @Column(nullable = false)
+    private String badge;
+    @Column
     private int category;
-    @Column (nullable = false)
-    private int favoriteCount = 0;
-    @Column (nullable = false)
+    @Column
+    private int favoriteCount;
+    @Column
     private int weight;
     @Column
     private int kcal;
@@ -45,13 +44,11 @@ public class Product {
     @Column
     private double sodium;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
-    private List<Comment> comments = new ArrayList<>();
-
-    //편의점 코드
     @ElementCollection
-    @CollectionTable(name="convenience_store")
-    @Column(name="convenience_store_code")
-    private List<Integer> logCombinationItem = new ArrayList<>();
+    @CollectionTable(name = "convenience_store")
+    @Column(name = "convenience_store_code")
+    private List<Integer> convenienceCode = new ArrayList<>();
 
+    @OneToMany(mappedBy = "product", cascade = CascadeType.REMOVE)
+    private List<Comment> comments;
 }

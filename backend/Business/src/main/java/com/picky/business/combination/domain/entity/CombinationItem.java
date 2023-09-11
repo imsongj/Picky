@@ -1,6 +1,5 @@
 package com.picky.business.combination.domain.entity;
 
-import com.picky.business.product.domain.entity.Product;
 import lombok.*;
 
 import javax.persistence.*;

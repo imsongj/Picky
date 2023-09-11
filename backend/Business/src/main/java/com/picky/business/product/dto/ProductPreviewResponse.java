@@ -1,6 +1,5 @@
 package com.picky.business.product.dto;
 
-import com.picky.business.product.domain.entity.Badge;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,10 +15,10 @@ public class ProductPreviewResponse {
     private String productName;
     private int price;
     private String filename;
-    private Badge badge;
+    private String badge;
     private Boolean isFavorite;
 
-    public static ProductPreviewResponse of(Long productId, String productName , int price, String filename, Badge badge) {
+    public static ProductPreviewResponse of(Long productId, String productName , int price, String filename, String badge) {
         return ProductPreviewResponse.builder()
                 .productId(productId)
                 .productName (productName )

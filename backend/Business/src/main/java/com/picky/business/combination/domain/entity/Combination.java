@@ -1,7 +1,7 @@
 package com.picky.business.combination.domain.entity;
 
-import com.picky.business.product.domain.entity.Comment;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -30,6 +30,9 @@ public class Combination {
     private String combinationName;
     @Column(nullable = false)
     private Boolean isDeleted;
+
+    @Column
+    @CreatedDate
     private LocalDateTime createdAt;
 
     @OneToMany(mappedBy = "combination", cascade = CascadeType.ALL)
