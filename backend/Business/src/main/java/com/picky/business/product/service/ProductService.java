@@ -90,7 +90,7 @@ public class ProductService {
     public void deleteProduct(Long id){
         //findById값이 null이면 예외 던지기, 그렇지 않다면 deleteById 실행
         productRepository.findById(id)
-                .ifPresentOrElse(
+                 .ifPresentOrElse(
                         product -> productRepository.deleteById(id),
                         () -> { throw new ProductNotFoundException(id + " NOT FOUND"); }
                 );
