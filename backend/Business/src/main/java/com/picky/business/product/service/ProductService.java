@@ -65,6 +65,7 @@ public class ProductService {
                         .price(product.getPrice())
                         .filename(product.getFilename())
                         .badge(product.getBadge())
+                        .favoriteCount(productRepository.countActiveFavoritesByProductId(product.getId()))
                         .build())
                 .collect(Collectors.toList());
     }
