@@ -14,6 +14,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -91,6 +92,7 @@ public class CombinationService {
                 .userId(userId)
                 .combinationName(request.getCombinationName())
                 .isDeleted(false)
+                .createdAt(LocalDateTime.now())
                 .totalKcal(0)
                 .totalPrice(0)
                 .totalCarb(0.0)
