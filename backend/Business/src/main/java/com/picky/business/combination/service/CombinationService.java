@@ -33,6 +33,7 @@ public class CombinationService {
 
     public List<CombinationListResponse> getPersonalCombinations(String accessToken) {
         Long userId = connectAuthService.getUserIdByAccessToken(accessToken);
+        log.info("personal Combination List 불러오기 : userId:" + userId);
         return combinationRepository.findByUserIdAndIsDeletedFalse(userId)
                 .stream()
                 .map(combination -> CombinationListResponse.builder()
@@ -144,8 +145,8 @@ public class CombinationService {
         combinationRepository.save(combination);
     }
 
-    public Long updateCombination(String accessToken, Long combinationId, CombinationInputRequest request){
-        deleteCombination(accessToken,combinationId);
+    public Long updateCombination(String accessToken, Long combinationId, CombinationInputRequest request) {
+        deleteCombination(accessToken, combinationId);
         return addCombination(accessToken, request);
     }
 }
