@@ -10,10 +10,10 @@ spark = SparkSession \
     .getOrCreate()
 
 # MySQL에서 데이터 읽기
-jdbc_url = "jdbc:mysql://j9a505a.p.ssafy.io:3308/business"
+jdbc_url = "jdbc:mysql://{url}/business"
 properties = {
-    "user": "root",
-    "password": "gndhqkd123",
+    "user": "{id}",
+    "password": "{password}",
     "driver": "com.mysql.cj.jdbc.Driver",
 }
 
