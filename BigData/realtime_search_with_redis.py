@@ -15,10 +15,10 @@ spark = SparkSession \
 start_time = time.time()
 
 # MySQL에서 데이터 읽기
-jdbc_url = "jdbc:mysql://j9a505a.p.ssafy.io:3308/business"  # IP와 포트를 자신의 환경에 맞게 수정
+jdbc_url = "jdbc:mysql://{url}/business"
 properties = {
-    "user": "root",  # MySQL 사용자 이름
-    "password": "gndhqkd123",  # MySQL 비밀번호
+    "user": "{id}",
+    "password": "{password}",
     "driver": "com.mysql.cj.jdbc.Driver",
 }
 
