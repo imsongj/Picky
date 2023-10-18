@@ -124,14 +124,14 @@
 ### Data Processing / Crawling
 
 <aside>
-<img src="/uploads/01e7725db48b967e32642201e4bdbce0/icons8-pandas-48.png" width="50" height="50"/>
-<img src="/uploads/36c868e419ba5b163a77ae74490b4f98/icons8-selenium-100.png" width="60" height="60"/>
+<img src="https://lab.ssafy.com/s09-bigdata-dist-sub2/S09P22A505/uploads/01e7725db48b967e32642201e4bdbce0/icons8-pandas-48.png" width="50" height="50"/>
+<img src="https://lab.ssafy.com/s09-bigdata-dist-sub2/S09P22A505/uploads/36c868e419ba5b163a77ae74490b4f98/icons8-selenium-100.png" width="60" height="60"/>
 
 </aside>
 
 ### ✔️ 발표 자료
 
-[ppt]
+[ppt](https://github.com/imsongj/Picky/blob/master/exec/%ED%8A%B9%ED%99%94PJT_%EC%84%9C%EC%9A%B8_5%EB%B0%98_A505_%EC%A0%84%EC%9E%84%EC%86%A1.pptx)
 
 [편식합시다. - YouTube](https://www.youtube.com/watch?v=EsqhW0yHhcQ)
 
@@ -163,11 +163,11 @@
 
 ### ✔️ 시스템 아키텍처
 
-<img width=50% src="/uploads/8968f73393b91769976382e76c548a6c/편식_아키텍처.png">
+<img width=50% src="https://github.com/imsongj/Picky/assets/60054843/e8fb9111-1e2d-4179-a369-bc12be12ac12">
 
 ### ✔️ ER-Diagram
 
-<img width=50% src="/uploads/e5aa3467013f139a3b8d7e3468a510f5/erd.png">
+<img width=50% src="https://github.com/imsongj/Picky/assets/60054843/e5711efb-1aa4-46e1-9bf0-b1d0f1fe321d">
 
 
 ---
@@ -179,29 +179,29 @@
 
 [편식 화면 설계도 Figma](https://www.figma.com/file/GxTwXO3ZQBauj2lkI0X8t6/%ED%99%94%EB%A9%B4-%EC%84%A4%EA%B3%84%EB%8F%84?type=design&node-id=0%3A1&mode=design&t=fsk9VuUYjyr0LKOS-1)
 
-<img width=10% src="/uploads/6979f81d0c91e3f7f9e053f0b035a988/moooookup.gif">
+<img width=30% src="https://lab.ssafy.com/s09-bigdata-dist-sub2/S09P22A505/uploads/6979f81d0c91e3f7f9e053f0b035a988/moooookup.gif">
 
 
 ### ✔️ 어플리케이션 UI
 
 
 <h2>홈페이지<h2>
-<img width=10% src="/uploads/ada84a3d580e42f93369cf4b26826ea9/homepage.gif">
+<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/4b7c88a3-82ba-4513-a554-d195a7a0bf11">
 
 <h2>검색 페이지<h2>
-<img width=10% src="/uploads/d82312ae9ec18a137338db03b0c82708/search.gif">
+<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/05f9bae6-db1d-4c2c-adae-cbe1f5e23351">
 
 <h2>상품목록 페이지<h2>
-<img width=10% src="/uploads/41bd6c16a5ef4ff45163c2410ab4e05d/filtered_list.gif">
+<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/32ecffc1-72fb-47aa-91c6-179f55812ebe">
 
 <h2>상세보기 페이지<h2>
-<img width=10% src="/uploads/d9369bf6ddff57eb442d7c5df2a72c2b/product_detail.gif">
+<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/7d552d75-c289-497a-bfa0-3f241ab8c92c">
 
 <h2>상품조합 페이지<h2>
-<img width=10% src="/uploads/62ad486612fbe4bbb47b52b8312a5b6a/combination.gif">
+<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/69dd7710-32d5-4992-9baf-78ac4dcb5683">
 
 <h2>로그인 페이지<h2>
-<img width=10% src="/uploads/b0342b0dd66d86b130bd0a7d4b29343f/login.gif">
+<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/c25d221c-b7d7-4832-9ecc-b2c371d5bf43">
 
-<h2>스크랩 페이지<h2>
-<img width=10% src="/uploads/f302da74c9f6611f657a9b0387817b10/scrapbook.gif">
+<h2>스크랩북 페이지<h2>
+<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/82934804-ccd8-4bad-b909-0c16108bed10">
