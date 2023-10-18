@@ -21,81 +21,28 @@
 
 ### ✔️ 사용 기술 스택
 
-### B/E
+### Backend
+- IntelliJ IDEA Ultimate
+- Java: 11 (Zulu 11.0.2)
+- Gradle: 8.2.1
+- Python 3.11.4
+- PIP 23.2.1
+- Spring Boot 2.7.15
+- Apache Spark 3.4.1
 
-<aside>
-<img src="https://spring.io/img/projects/spring-boot.svg" alt="https://spring.io/img/projects/spring-boot.svg" width="40px" />
-
-</aside>
-
-<aside>
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" width="40px" />
-
-
-</aside>
-
-<aside>
-<img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/gradle_logo_icon_145224.png" alt="https://cdn.icon-icons.com/icons2/2389/PNG/512/gradle_logo_icon_145224.png" width="40px" />
-
-</aside>
-
-<aside>
-<img src="https://www.svgrepo.com/show/452091/python.svg" alt="https://www.svgrepo.com/show/452091/python.svg" width="40px" />
-
-</aside>
-
-<aside>
-<img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_spark_logo_icon_170560.png" alt="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_spark_logo_icon_170560.png" width="40px" />
-
-</aside>
-
-### F/E
-
-<aside>
-<img src="https://cdn.iconscout.com/icon/free/png-256/free-flutter-2038877-1720090.png" alt="https://cdn.iconscout.com/icon/free/png-256/free-flutter-2038877-1720090.png" width="40px" />
-
-</aside>
+### Frontend
+- Android Studio
+- Flutter 3.13.3
 
 ### Storage
+- MySQL 8.0.3
+- Kafka 3.1.2
 
-<aside>
-<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png" alt="https://cdn.icon-icons.com/icons2/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png" width="40px" /> 
-
-</aside>
-
-<aside>
-<img src="https://assets.stickpng.com/images/584830b5cef1014c0b5e4a9c.png" alt="https://assets.stickpng.com/images/584830b5cef1014c0b5e4a9c.png" width="40px" />
-
-</aside>
-
-<aside>
-<img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/apache_kafka_icon_138937.png" alt="https://cdn.icon-icons.com/icons2/2248/PNG/512/apache_kafka_icon_138937.png" width="40px" /> 
-
-</aside>
-
-### Dev-Ops
-
-<aside>
-<img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="https://cdn-icons-png.flaticon.com/512/919/919853.png" width="40px" />
-
-</aside>
-
-### Infra
-
-<aside>
-<img src="https://static-00.iconduck.com/assets.00/aws-ec2-icon-423x512-iaajemnx.png" alt="https://static-00.iconduck.com/assets.00/aws-ec2-icon-423x512-iaajemnx.png" width="40px" />
-
-</aside>
-
-<aside>
-<img src="https://static.invertase.io/assets/social/firebase-logo.png" alt="https://static.invertase.io/assets/social/firebase-logo.png" width="40px" />
-
-</aside>
-
-<aside>
-<img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_zookeeper_logo_icon_169571.png" alt="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_zookeeper_logo_icon_169571.png" width="40px" /> 
-
-</aside>
+### Dev-Ops / Infra
+- Docker
+- AWS EC2
+- FCM(Firebase Cloud Messaging)
+- ZooKeeper 3.6.4
 
 ### Collaboration
 
@@ -121,30 +68,22 @@
 
 </aside>
 
-### Data Processing / Crawling
-
-<aside>
-<img src="https://lab.ssafy.com/s09-bigdata-dist-sub2/S09P22A505/uploads/01e7725db48b967e32642201e4bdbce0/icons8-pandas-48.png" width="50" height="50"/>
-<img src="https://lab.ssafy.com/s09-bigdata-dist-sub2/S09P22A505/uploads/36c868e419ba5b163a77ae74490b4f98/icons8-selenium-100.png" width="60" height="60"/>
-
-</aside>
-
 ### ✔️ 발표 자료
 
-[ppt](https://github.com/imsongj/Picky/blob/master/exec/%ED%8A%B9%ED%99%94PJT_%EC%84%9C%EC%9A%B8_5%EB%B0%98_A505_%EC%A0%84%EC%9E%84%EC%86%A1.pptx)
+[최종 발표 PPT](https://github.com/imsongj/Picky/blob/master/exec/%ED%8A%B9%ED%99%94PJT_%EC%84%9C%EC%9A%B8_5%EB%B0%98_A505_%EC%A0%84%EC%9E%84%EC%86%A1.pptx)
 
-[편식합시다. - YouTube](https://www.youtube.com/watch?v=EsqhW0yHhcQ)
+[최종 UCC: 편식합시다. - YouTube](https://www.youtube.com/watch?v=EsqhW0yHhcQ)
 
 ---
 
 ## 👥 팀원
 
 ### ✔️ FE
-
-- 류정모
-    - [FE] Figma를 활용한 목업 제작, Flutter를 활용한 편식 어플리케이션 개발,  UI/UX 설계
+ 
 - 전임송
-    - [FE] 팀장, 발표, Figma를 활용한 목업 제작, Flutter를 활용한 편식 어플리케이션 개발,  UI/UX 설계
+    - [FE] 팀장, 발표, UI/UX 설계Flutter 어플리케이션 개발
+- 류정모
+    - [FE] UI/UX 설계, Flutter 어플리케이션 개발
 
 ### ✔️ BE
 
