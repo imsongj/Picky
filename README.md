@@ -1,3 +1,7 @@
+# 편식
+
+<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/4b7c88a3-82ba-4513-a554-d195a7a0bf11">
+
 ## 📌 프로젝트 소개
 
 ### ✔️ 주제
@@ -125,22 +129,22 @@
 
 
 <h2>홈페이지<h2>
-<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/4b7c88a3-82ba-4513-a554-d195a7a0bf11">
+<img width=20% src="https://github.com/imsongj/Picky/assets/60054843/4b7c88a3-82ba-4513-a554-d195a7a0bf11">
 
 <h2>검색 페이지<h2>
-<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/05f9bae6-db1d-4c2c-adae-cbe1f5e23351">
+<img width=20% src="https://github.com/imsongj/Picky/assets/60054843/05f9bae6-db1d-4c2c-adae-cbe1f5e23351">
 
 <h2>상품목록 페이지<h2>
-<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/32ecffc1-72fb-47aa-91c6-179f55812ebe">
+<img width=20% src="https://github.com/imsongj/Picky/assets/60054843/32ecffc1-72fb-47aa-91c6-179f55812ebe">
 
 <h2>상세보기 페이지<h2>
-<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/7d552d75-c289-497a-bfa0-3f241ab8c92c">
+<img width=20% src="https://github.com/imsongj/Picky/assets/60054843/7d552d75-c289-497a-bfa0-3f241ab8c92c">
 
 <h2>상품조합 페이지<h2>
-<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/69dd7710-32d5-4992-9baf-78ac4dcb5683">
+<img width=20% src="https://github.com/imsongj/Picky/assets/60054843/69dd7710-32d5-4992-9baf-78ac4dcb5683">
 
 <h2>로그인 페이지<h2>
-<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/c25d221c-b7d7-4832-9ecc-b2c371d5bf43">
+<img width=20% src="https://github.com/imsongj/Picky/assets/60054843/c25d221c-b7d7-4832-9ecc-b2c371d5bf43">
 
 <h2>스크랩북 페이지<h2>
-<img width=30% src="https://github.com/imsongj/Picky/assets/60054843/82934804-ccd8-4bad-b909-0c16108bed10">
+<img width=20% src="https://github.com/imsongj/Picky/assets/60054843/82934804-ccd8-4bad-b909-0c16108bed10">
